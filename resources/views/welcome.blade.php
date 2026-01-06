@@ -9,6 +9,9 @@
 <body>
     <h1 class="text-xl text-white">Laravel</h1>
     <livewire:hello-world />
+    <br>
     <livewire:counter />
+    <br>
+    <livewire:todos />
 </body>
 </html>

@@ -9,3 +9,7 @@ Route::get('/', function () {
 Route::get('/hello', function () {
     return view('livewire.hello-world');
 });
+
+Route::get('/todos', function () {
+    return view('livewire.hello-world');
+});
