@@ -6,16 +6,18 @@ use Livewire\Component;
 
 class Todos extends Component
 {
-    public $todos = [
-        'mangan'
-    ];
-
     public $todo = '';
+    public $todos = [];
 
     public function addTodo()
     {
         $this->todos[] = $this->todo;
         $this->reset('todo');
+    }
+
+    public function updatedTodo($value)
+    {
+        $this->todo = strtoupper($value);
     }
 
     public function render()

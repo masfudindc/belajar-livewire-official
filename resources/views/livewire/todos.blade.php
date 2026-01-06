@@ -18,7 +18,7 @@
         {{-- <input type="text" wire:model.blur="todo"> --}}
 
         {{-- inputan langsung di render --}}
-        <input type="text" wire:model="todo">
+        <input type="text" wire:model.live="todo">
 
         <span>Current todo: {{ $todo }}</span>
 
